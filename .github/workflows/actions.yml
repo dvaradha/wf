@@ -5,6 +5,10 @@ jobs:
   actions-workflow-one:
     runs-on: ubuntu-latest
     steps:
+      - name: list files
+        run: |
+          pwd
+          ls -l
       - name: hello world java script
         id: greet
         uses: actions/hello-world-javascript-action@v1
@@ -12,3 +16,4 @@ jobs:
           who-to-greet: Varadha
       - name: action ran time
         run: echo "${{steps.greet.outputs.time}}"
+      
