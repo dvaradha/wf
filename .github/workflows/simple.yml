@@ -20,5 +20,13 @@ jobs:
         run: |
           import platform
           print(platform.processor())
+  run-on-windows:
+    runs-on: windows-latest
+    steps:
+      - name: runs of windows
+        run: Get-Location
+      - name: using bash
+        shell: bash
+        run: pwd
       
     
