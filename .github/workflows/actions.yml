@@ -8,7 +8,13 @@ jobs:
       - name: list files
         run: |
           pwd
-          ls -l
+          ls -al
+      - name: checkout action
+        uses: actions/checkout@v1
+      - name: list after checkout
+        run: |
+          pwd
+          ls -al
       - name: hello world java script
         id: greet
         uses: actions/hello-world-javascript-action@v1
