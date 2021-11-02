@@ -12,3 +12,13 @@ jobs:
         run: |
           node -v
           npm -v
+  run-shell-command-on-power
+    runs-on: ubuntu-latest
+    steps:
+      - name: python command
+        shell: python
+      - run: |
+          import platform
+          print(platform.processor())
+      
+    
