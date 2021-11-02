@@ -22,4 +22,10 @@ jobs:
           who-to-greet: Varadha
       - name: action ran time
         run: echo "${{steps.greet.outputs.time}}"
+      - name: echo variables
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+          echo "${{github.token}}"
       
