@@ -22,6 +22,7 @@ jobs:
           print(platform.processor())
   run-on-windows:
     runs-on: windows-latest
+    needs: ["run-shell-command","run-shell-command-on-power"]
     steps:
       - name: runs of windows
         run: Get-Location
