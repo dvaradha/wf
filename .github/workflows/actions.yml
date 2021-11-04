@@ -9,6 +9,8 @@ jobs:
         run: |
           pwd
           ls -al
+      - name: just like that
+        run: echo "ok"
       - name: checkout action
         uses: actions/checkout@v1
       - name: list after checkout
