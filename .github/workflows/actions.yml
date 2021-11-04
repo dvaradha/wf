@@ -1,5 +1,5 @@
 name: actions workflow
-on: [push]
+on: [pull_request]
 
 jobs:
   actions-workflow-one:
@@ -28,4 +28,6 @@ jobs:
           echo $GITHB_REPOSITORY
           echo $GITHUB_WORKSPACE
           echo "${{github.token}}"
+
+          
       
