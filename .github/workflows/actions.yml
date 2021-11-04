@@ -28,6 +28,12 @@ jobs:
           echo $GITHB_REPOSITORY
           echo $GITHUB_WORKSPACE
           echo "${{github.token}}"
+      - name: just testing
+        run: echo $GITHUN_SHA
+      - name: another check
+        uses: actions/hello-world-javascript-action@v1
+        with:
+          who-to-greet: Pihu-also-called-Tihi
 
           
       
