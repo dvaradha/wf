@@ -13,6 +13,8 @@ jobs:
         run: |
           node -v
           npm -v
+      - name: third step
+        run: echo "oh this one ran"
   run-shell-command-on-power:
     runs-on: ubuntu-latest
     steps:
