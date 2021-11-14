@@ -22,4 +22,5 @@ jobs:
           git add -A
           git commit -m "Random file"
           git push
+          ls -a
       
