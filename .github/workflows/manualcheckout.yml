@@ -2,7 +2,7 @@ name: advanced steps
 on: [push]
 
 jobs:
-  manually create file in repo:
+  manually-create-file-in-repo:
     runs-on: ubuntu-latest
     steps:
       - name: push a random file
