@@ -1,5 +1,5 @@
 name: advanced steps
-on: [push]
+on: [pull_request]
 
 jobs:
   manually-create-file-in-repo:
